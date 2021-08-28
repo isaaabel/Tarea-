@@ -1,0 +1,227 @@
+@font-face {
+    font-family:Barlow;
+    src: url(./varios/Barlow-Light.ttf);
+}
+*{
+    margin:0px;
+    padding:0px ;
+    box-sizing: border-box;
+}
+body{
+    font-family: Barlow ;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 188, 166)  ;
+    color: cornsilk;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#contenedor {
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}
+header .contenedor {
+    display: table;
+}
+#inicio {
+    width: 100%;
+    margin-bottom: 25px;
+}
+}
+#menu-bar {
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px ;
+    margin: 6px 0 ;
+    cursor: pointer;
+}
+#navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100% ;
+    height: 100vh;
+    background-color: rgba(255, 188, 166, 0.664);
+    transition: all 0.5s;
+    transform: translateX(-100%) ;
+
+}
+#navbar{
+    text-decoration: none;
+}
+#navbar a{
+    display: block;
+    color: cornsilk;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px ;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.733);
+}
+#navbar a:hover {
+    background-color: rgba(245, 245, 245, 0.733);
+}
+#menu-bar:checked ~ #navbar {
+    transform: translateX(0%) ;
+}
+@media (min-width:1024px) {
+    #navbar {
+     position: static ; 
+       width: auto;
+       height: auto;
+       transform: translateX(0%) ;
+       float: right ;
+       display: flex;
+    }
+    #navbar a{
+        border: none;  
+    }
+    header label{
+        display: none;
+    
+    }
+} 
+#baner {
+   margin-top: 50px ; 
+}
+#baner img {
+    width: 100% ;
+    height: 100%;
+}
+#parrafo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(250, 247, 234);
+    text-shadow: rgb(235, 150, 122) 2px 2px;
+}
+#parrafo h2 {
+    font-size: 28px;
+}
+@media (min-width:480px) {
+    #parrafo h2{
+       font-size: 40px; 
+    }
+}
+@media (min-width:768px) {
+    #baner{
+        height: 300px;
+        overflow: hidden;
+    }
+    #baner img{
+        height: auto;
+        margin-top: -100px;
+    }  
+}
+@media (min-width:1024px) {
+    #baner img{
+        margin-top: -300px;
+    } 
+    #parrafo{
+        margin-top: -100px;
+
+    }
+
+}
+#bienvenido {
+    text-align: center;
+    color: rgb(172, 136, 125);
+}
+#bienvenido h2{
+    font-weight: bold;
+    color: rgb(129, 98, 89);
+}
+.lenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.tipos-lenguajes {
+    margin: 20px;
+}
+.tipos-lenguajes img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+#contactame {
+   width: 400px;
+    background-color:rgba(255, 248, 220, 0.89);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: darksalmon;
+}
+#contactame h2{
+    color: rgb(190, 131, 112);
+}
+#contactame p{
+    color: darksalmon;
+}
+.cajas{
+    width: 100%;
+    background-color: rgba(255, 248, 220, 0.76);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(233, 150, 122, 0.842);
+    font-size: 16px;
+}
+#formulario .boton{
+    width: 100%;
+    background-color: rgb(238, 158, 131);
+    border: none;
+    padding: 12px;
+    color: cornsilk;
+    margin: 16px 0;
+    font-size: 18px;    
+}
+#final{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px ;
+}
+.copy {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(172, 118, 101);
+}
+.redes {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.redes a{
+    color: darksalmon;
+    text-decoration: none;
+
+}
+
+@media (min-width:1024px) {
+    #contenedor {
+       width: 1000px; 
+
+    }
+}
+@media (min-width:768px){
+    .redes{
+       width: auto;  
+    }
+#final {
+    justify-content: space-between;
+}
+}
